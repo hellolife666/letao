@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud_01_eureka_server_7001" />
+        <module name="springcloud_01_eureka_server_cluster_7002" />
+        <module name="springcloud_02_user_interface" />
+        <module name="springcloud_03_user_provider_8001" />
+        <module name="springcloud_03_user_provider_8002" />
+        <module name="springcloud_04_consumer_loadbalance_feign_9003" />
+        <module name="springcloud_04_consumer_loadbalance_ribbon_9002" />
+        <module name="springcloud_04_user_consumer_resttemplate_9001" />
+        <module name="springcloud_05_zuul_gatewar_9527" />
+        <module name="springcloud_09_config_1299" />
+        <module name="springcloud_10_config_client_provider_8848" />
+        <module name="zuul_gatewar_9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud_01_eureka_server_7001" target="1.5" />
+      <module name="springcloud_01_eureka_server_cluster_7002" target="1.5" />
+      <module name="springcloud_02_user_interface" target="1.5" />
+      <module name="springcloud_03_user_provider_8001" target="1.5" />
+      <module name="springcloud_03_user_provider_8002" target="1.5" />
+      <module name="springcloud_04_consumer_loadbalance_feign_9003" target="1.5" />
+      <module name="springcloud_04_consumer_loadbalance_ribbon_9002" target="1.5" />
+      <module name="springcloud_04_user_consumer_resttemplate_9001" target="1.5" />
+      <module name="springcloud_05_zuul_gatewar_9527" target="1.5" />
+      <module name="springcloud_09_config_1299" target="1.5" />
+      <module name="springcloud_10_config_client_provider_8848" target="1.5" />
+      <module name="springcloud_parent" target="1.5" />
+      <module name="zuul_gatewar_9527" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

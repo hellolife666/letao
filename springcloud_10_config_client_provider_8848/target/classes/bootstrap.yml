@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:1299 #配置服务器地址
+      label: master #git分支
+      name: application #github上面文件仓库的名称，根据具体情况取名字 区分
+      profile: dev #环境 ，很据不同的环境在对应的 配置文件配置参数
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:7001/eureka  #告诉服务提供者要把服务注册到哪儿 #单机环境
+  instance:
+    prefer-ip-address: true #显示客户端真实ip

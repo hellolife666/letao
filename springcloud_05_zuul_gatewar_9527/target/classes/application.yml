@@ -1,0 +1,21 @@
+server:
+  port: 9527
+spring:
+  application:
+    name:  MICROSERVICE-ZUUL-GATEWAY # 路由应用名字使用大写，而访问地址写成小写
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #注册到这个服务注册中心
+  instance:
+    instance-id: gateway-9527 #显示的名字而已
+    prefer-ip-address: true  #是否显示 地址在服务中心。
+zuul:
+  routes:
+    User.serviceId: user-provider1 # http://localhost:9527/microservice-zuul-gateway/user-provider/provider/user/5 太长了这样配置去别名一样
+    User.path: /xx/**
+  ignored-services: "*"
+  prefix: /wwbb   # 访问前缀
+
+
+# 匹配 /xxx开头的请求映射到user-provider服务上

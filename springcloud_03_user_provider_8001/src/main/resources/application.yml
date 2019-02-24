@@ -1,0 +1,10 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: USER-PROVIDER #在客户端注册的名字。
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka  #服务注册地址
+
