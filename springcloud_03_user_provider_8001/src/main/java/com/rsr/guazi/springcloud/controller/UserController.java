@@ -12,6 +12,7 @@ public class UserController {
     @RequestMapping("/user/{id}")
     public User loadUser(@PathVariable("id") Long id){
 
+        System.out.println("hahaah");
 
         return new User(id,"kkkk");
     }
